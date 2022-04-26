@@ -49,18 +49,60 @@ public class App {
             
         }
 
+                // // Deklaration | Chars
+        char [] letters = {'d','c','a','A','b'};
 
-            
+        output("");
+        output("---- vor Sortierung: ");
+        for (int i = 0; i < letters.length; i++) {
+        output(letters[i]);
+        }
 
-    
 
-        
+
+        // // Sortierfkt. --> sortiertes Array
+        Arrays.sort(letters); // Statische Klasse | Methode
+
+
+
+        output("");
+        output("---- nach Sortierung: ");
+        for (int i = 0; i < letters.length; i++) {
+        output(letters[i]);
+        }
+
+
+
+        output("");
+        output("---- Suche: erfolgreich ----");
+        // ... danach Suche (1)
+        int searchIndex = Arrays.binarySearch(letters,'a');
+        output(" searchIndex: " + searchIndex);
+
+        output("---- Suche: erfolglos ----");
+        // ... danach Suche (2)
+        searchIndex = Arrays.binarySearch(letters,'e');
+        output(" searchIndex: " + searchIndex); // -(length+1)
+        // .... isInArray()
+
+        output("---- fill() ----");
+        //.. Array füllen
+        Arrays.fill(letters, '0');
+        for (int i = 0; i < letters.length; i++) {
+        output((letters[i]));
+        }  
      
     }
 
     public static void output(String outputStr) {
         System.out.println(outputStr);
     }
+// überladene Methode
+    private static void output(char outChar) {
+    System.out.print(outChar);
+    }
+
+
 
 
 
