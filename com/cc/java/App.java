@@ -23,14 +23,29 @@ public class App {
     //    output("3.Element: " + intArr[2]);
     //    output("4.Element: " + intArr[intArr.length - 1]);
 
-        String[] strArr= {"Ich", "bin", "Rocky","der", "SuperStar"};
+        // String[] strArr= {"Ich", "bin", "Rocky","der", "SuperStar"};
         // output("1.Element: " + strArr[0]);
         // output("2.Element: " + strArr[1]);
         // output("3.Element: " + strArr[2]);
 
-        for (int i = 0; i < strArr.length; i++) {
+        // for (int i = 0; i < strArr.length; i++) {
 
-            output(strArr[i]);
+        //     output(strArr[i]);
+            
+        // }
+
+        String [][] strMdArr = {{"Max","Mustermann"},{"Maxine","Musterfrau"}};
+
+        // output(strMdArr[0][0]);
+
+        // output(strMdArr[1][0]);
+
+        // nested loop
+        for (int i = 0; i < strMdArr.length; i++) {
+            for (int j = 0; j < strMdArr.length; j++) {
+                output("Indizes i/j: " + "i: " + i + " j: " + j + " " + strMdArr[i][j]);
+                
+            }
             
         }
 
